@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get to Know Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Slideshow -->
+    <div class="slideshow">
+        <img src="images/image1.jpg" alt="Romantic Image 1" class="slide">
+        <img src="images/image2.jpg" alt="Romantic Image 2" class="slide">
+        <img src="images/image3.jpg" alt="Romantic Image 3" class="slide">
+    </div>
+
+    <!-- Language Toggle -->
+    <div class="language-toggle">
+        <button id="englishBtn">English</button>
+        <button id="punjabiBtn">ਪੰਜਾਬੀ (Punjabi)</button>
+        <button id="hindiBtn">हिंदी (Hindi)</button>
+    </div>
+
+    <!-- Welcome Screen -->
+    <div class="welcome-screen" id="welcomeScreen">
+        <h1 id="greeting">Good Morning, Riya!</h1>
+        <p id="welcomeMessage">Welcome to a space where you can discover everything about me. I hope this brings us closer.</p>
+        <button id="continueBtn">Continue if you're interested in knowing me</button>
+    </div>
+
+    <!-- Declaration Screen -->
+    <div class="declaration-screen" id="declarationScreen" style="display: none;">
+        <h2 id="declarationTitle">Declaration</h2>
+        <p id="declarationText">All the information provided here is true and correct to the best of my knowledge.</p>
+        <label>
+            <input type="checkbox" id="declarationCheckbox"> <span id="acknowledgeText">I acknowledge this declaration.</span>
+        </label>
+        <button id="proceedBtn" disabled>Proceed</button>
+    </div>
+
+    <!-- Biography Sections -->
+    <div class="biography-screen" id="biographyScreen" style="display: none;">
+        <h2 id="biographyTitle">What would you like to know about me?</h2>
+        <form id="biographyForm">
+            <label><input type="checkbox" name="section" value="basicInfo"> <span>Basic Information</span></label><br>
+            <label><input type="checkbox" name="section" value="family"> <span>Family Background</span></label><br>
+            <label><input type="checkbox" name="section" value="interests"> <span>Interests and Hobbies</span></label><br>
+            <label><input type="checkbox" name="section" value="lifestyle"> <span>Lifestyle</span></label><br>
+            <label><input type="checkbox" name="section" value="goals"> <span>Life Goals and Ambitions</span></label><br>
+            <label><input type="checkbox" name="section" value="relationship"> <span>Relationship History</span></label><br>
+            <label><input type="checkbox" name="section" value="personality"> <span>Personality Traits</span></label><br>
+            <label><input type="checkbox" name="section" value="movies"> <span>Favorite Movies and Songs</span></label><br>
+        </form>
+        <button id="viewSelectedBtn">View Selected Sections</button>
+    </div>
+
+    <!-- Display Selected Sections -->
+    <div class="selected-sections" id="selectedSections" style="display: none;">
+        <h2 id="selectedTitle">Here's what you wanted to know:</h2>
+        <div id="basicInfo" class="section" style="display: none;">
+            <h3>Basic Information</h3>
+            <p>Name: John Doe</p>
+            <p>Location: New York</p>
+            <p>Education: Bachelor's in Computer Science</p>
+        </div>
+        <div id="family" class="section" style="display: none;">
+            <h3>Family Background</h3>
+            <p>Parents: Jane and John Doe</p>
+            <p>Siblings: 1 younger sister</p>
+        </div>
+        <div id="interests" class="section" style="display: none;">
+            <h3>Interests and Hobbies</h3>
+            <p>I love coding, reading, and traveling.</p>
+        </div>
+        <div id="lifestyle" class="section" style="display: none;">
+            <h3>Lifestyle</h3>
+            <p>I don't smoke or drink. I believe in a healthy and balanced lifestyle.</p>
+        </div>
+        <div id="goals" class="section" style="display: none;">
+            <h3>Life Goals and Ambitions</h3>
+            <p>I want to become a successful software engineer and travel the world.</p>
+        </div>
+        <div id="relationship" class="section" style="display: none;">
+            <h3>Relationship History</h3>
+            <p>I believe in meaningful connections and have had one serious relationship in the past.</p>
+        </div>
+        <div id="personality" class="section" style="display: none;">
+            <h3>Personality Traits</h3>
+            <p>I am an introvert, but I love deep conversations and spending time with close friends.</p>
+        </div>
+        <div id="movies" class="section" style="display: none;">
+            <h3>Favorite Movies and Songs</h3>
+            <p>Movies: Inception, Interstellar, The Dark Knight</p>
+            <p>Songs: "Shape of You" by Ed Sheeran, "Blinding Lights" by The Weeknd</p>
+        </div>
+        <button id="feedbackBtn">Give Feedback</button>
+    </div>
+
+    <!-- Feedback Screen -->
+    <div class="feedback-screen" id="feedbackScreen" style="display: none;">
+        <h2 id="feedbackTitle">Feedback</h2>
+        <p id="satisfactionText">How satisfied are you with the information provided?</p>
+        <select id="satisfaction">
+            <option value="5">Very Satisfied</option>
+            <option value="4">Satisfied</option>
+            <option value="3">Neutral</option>
+            <option value="2">Dissatisfied</option>
+            <option value="1">Very Dissatisfied</option>
+        </select>
+        <p id="additionalInfoText">What else would you like to know?</p>
+        <textarea id="additionalInfo" rows="4" cols="50"></textarea>
+        <button id="submitFeedbackBtn">Submit Feedback</button>
+    </div>
+
+    <!-- Thank You Screen -->
+    <div class="thank-you-screen" id="thankYouScreen" style="display: none;">
+        <h2 id="thankYouTitle">Thank You, Riya!</h2>
+        <p id="thankYouMessage">Your feedback means a lot to me. I hope this brings us closer. 💖</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
