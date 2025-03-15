@@ -37,7 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
             additionalInfoText: "What else would you like to know?",
             submitFeedbackBtn: "Submit Feedback",
             thankYouTitle: "Thank You, Riya!",
-            thankYouMessage: "Your feedback means a lot to me. I hope this brings us closer. 💖"
+            thankYouMessage: "Your feedback means a lot to me. I hope this brings us closer. 💖",
+            additionalNote: "To know more, you'll have to contact my mother."
         },
         pa: {
             greeting: "ਸਤ ਸ੍ਰੀ ਅਕਾਲ, ਰੀਆ!",
@@ -55,7 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
             additionalInfoText: "ਤੁਸੀਂ ਹੋਰ ਕੀ ਜਾਣਨਾ ਚਾਹੁੰਦੇ ਹੋ?",
             submitFeedbackBtn: "ਫੀਡਬੈਕ ਦਿਓ",
             thankYouTitle: "ਧੰਨਵਾਦ, ਰੀਆ!",
-            thankYouMessage: "ਤੁਹਾਡਾ ਫੀਡਬੈਕ ਮੇਰੇ ਲਈ ਬਹੁਤ ਮਹੱਤਵਪੂਰਨ ਹੈ। ਮੈਨੂੰ ਉਮੀਦ ਹੈ ਕਿ ਇਹ ਸਾਨੂੰ ਕਰੀਬ ਲਿਆਵੇਗਾ। 💖"
+            thankYouMessage: "ਤੁਹਾਡਾ ਫੀਡਬੈਕ ਮੇਰੇ ਲਈ ਬਹੁਤ ਮਹੱਤਵਪੂਰਨ ਹੈ। ਮੈਨੂੰ ਉਮੀਦ ਹੈ ਕਿ ਇਹ ਸਾਨੂੰ ਕਰੀਬ ਲਿਆਵੇਗਾ। 💖",
+            additionalNote: "ਹੋਰ ਜਾਣਨ ਲਈ ਤੁਹਾਨੂੰ ਮੇਰੀ ਮਾਤਾ ਜੀ ਨਾਲ ਸੰਪਰਕ ਕਰਨਾ ਪਵੇਗਾ।"
         },
         hi: {
             greeting: "सुप्रभात, रिया!",
@@ -73,7 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
             additionalInfoText: "आप और क्या जानना चाहते हैं?",
             submitFeedbackBtn: "प्रतिक्रिया दें",
             thankYouTitle: "धन्यवाद, रिया!",
-            thankYouMessage: "आपकी प्रतिक्रिया मेरे लिए बहुत महत्वपूर्ण है। मुझे उम्मीद है कि यह हमें करीब लाएगा। 💖"
+            thankYouMessage: "आपकी प्रतिक्रिया मेरे लिए बहुत महत्वपूर्ण है। मुझे उम्मीद है कि यह हमें करीब लाएगा। 💖",
+            additionalNote: "इससे ज्यादा जानने के लिए आपको मेरी माता जी से संपर्क करना होगा।"
         }
     };
 
@@ -145,4 +148,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Feedback Screen
-    document.getElementById('feedbackBtn
+    document.getElementById('feedbackBtn').addEventListener('click', () => {
+        console.log('Feedback button clicked!'); // Debugging line
+        document.getElementById('selectedSections').style.display = 'none';
+        document.getElementById('feedbackScreen').style.display = 'block';
+    });
+
+    // Submit Feedback
+    document.getElementById('submitFeedbackBtn').addEventListener('click', () => {
+        console.log('Submit Feedback button clicked!'); // Debugging line
+        const satisfaction = document.getElementById('satisfaction').value;
+        const additionalInfo = document.getElementById('additionalInfo').value;
+        alert(`Thank you for your feedback!\nSatisfaction: ${satisfaction}\nAdditional Info: ${additionalInfo}`);
+        document.getElementById('feedbackScreen').style.display = 'none';
+        document.getElementById('thankYouScreen').style.display = 'block';
+    });
+});
