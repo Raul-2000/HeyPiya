@@ -146,6 +146,14 @@ button:hover {
     margin-bottom: 30px;
 }
 
+/* Additional Note Style */
+#additionalNote {
+    font-size: 18px;
+    color: #ff6f61; /* Romantic pink color */
+    margin-top: 20px;
+    font-style: italic;
+}
+
 /* Biography and Selected Sections */
 .biography-screen, .selected-sections, .feedback-screen {
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
