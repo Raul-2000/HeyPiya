@@ -1,6 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Script loaded!'); // Debugging line
 
+    // Background Slideshow
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    showSlide(currentSlide);
+
     // Language Toggle
     const translations = {
         en: {
@@ -127,19 +145,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Feedback Screen
-    document.getElementById('feedbackBtn').addEventListener('click', () => {
-        console.log('Feedback button clicked!'); // Debugging line
-        document.getElementById('selectedSections').style.display = 'none';
-        document.getElementById('feedbackScreen').style.display = 'block';
-    });
-
-    // Submit Feedback
-    document.getElementById('submitFeedbackBtn').addEventListener('click', () => {
-        console.log('Submit Feedback button clicked!'); // Debugging line
-        const satisfaction = document.getElementById('satisfaction').value;
-        const additionalInfo = document.getElementById('additionalInfo').value;
-        alert(`Thank you for your feedback!\nSatisfaction: ${satisfaction}\nAdditional Info: ${additionalInfo}`);
-        document.getElementById('feedbackScreen').style.display = 'none';
-        document.getElementById('thankYouScreen').style.display = 'block';
-    });
-});
+    document.getElementById('feedbackBtn
