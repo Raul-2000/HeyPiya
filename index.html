@@ -3,103 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Little Space for Us</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Romantic Love Story</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="slideshow">
-        <img src="https://images.unsplash.com/photo-1474552226712-ac0f0961a954?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ImageR1" class="slide">
-        <img src="https://images.unsplash.com/photo-1513279922550-250c2129b13a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ImageR2" class="slide">
-        <img src="https://images.unsplash.com/photo-1525893107765-3eedb8fe8595?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ImageR3" class="slide">
-        <img src="https://img.freepik.com/free-photo/white-red-hearts_1048-4213.jpg" alt="ImageR4" class="slide">
-        <img src="https://images.unsplash.com/photo-1675194722355-f67f033e74d1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ImageR4" class="slide">
-        <img src="https://images.unsplash.com/photo-1471530090166-fbe1875839c4?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ImageR5" class="slide">
-    </div>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#songs">Songs</a></li>
+                <li><a href="#photos">Photos</a></li>
+                <li><a href="#stories">Love Stories</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="language-toggle">
-        <button id="englishBtn">English</button>
-        <button id="punjabiBtn">ਪੰਜਾਬੀ (Punjabi)</button>
-        <button id="hindiBtn">हिंदी (Hindi)</button>
-    </div>
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to the World of Love</h1>
+            <p>Where love is timeless, pure, and beautiful.</p>
+        </div>
+    </section>
 
-    <nav class="main-nav">
-        <ul>
-            <li><a href="#home" id="homeLink">Home</a></li>
-            <li><a href="#about" id="aboutLink">About</a></li>
-            <li><a href="#contact" id="contactLink">Contact</a></li>
-            <li><a href="#songs" id="songsLink">Songs for You</a></li>
-            <li><a href="#photos" id="photosLink">Photos</a></li>
-            <li><a href="#stories" id="storiesLink">Long Love Stories</a></li>
-        </ul>
-    </nav>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>This is a special place where love stories come to life. Every moment captured, every song played, and every photo shared celebrates the magic of love.</p>
+    </section>
 
-    <main class="content">
-        <section id="home" class="home-section">
-            <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1548681528-6a5799530524?fm=jpg&q=80&w=2000&fit=max&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Romantic Couple">
+    <!-- Songs Section -->
+    <section id="songs" class="songs">
+        <h2>Songs for You</h2>
+        <div class="song-list">
+            <div class="song-item">
+                <h3>Song 1</h3>
+                <audio controls>
+                    <source src="song1.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
             </div>
-            <div class="hero-text">
-                <h1 id="greeting">Welcome to Our Little Space</h1>
-                <p id="welcomeMessage">A place where our hearts connect and our story unfolds.</p>
+            <div class="song-item">
+                <h3>Song 2</h3>
+                <audio controls>
+                    <source src="song2.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="about" class="about-section">
-            <h2 id="aboutTitle">About Us</h2>
-            <p id="aboutText">This is where we can share a little bit about ourselves and our journey together. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </section>
+    <!-- Photos Section -->
+    <section id="photos" class="photos">
+        <h2>Photos</h2>
+        <div class="photo-gallery">
+            <img src="photo1.jpg" alt="Romantic Moment 1">
+            <img src="photo2.jpg" alt="Romantic Moment 2">
+            <img src="photo3.jpg" alt="Romantic Moment 3">
+        </div>
+    </section>
 
-        <section id="contact" class="contact-section">
-            <h2 id="contactTitle">Contact Me</h2>
-            <p id="contactMessage">Feel free to reach out!</p>
-            <form id="contactForm">
-                <input type="text" id="name" name="name" placeholder="Your Name">
-                <input type="email" id="email" name="email" placeholder="Your Email">
-                <textarea id="message" name="message" rows="4" placeholder="Your Message"></textarea>
-                <button type="submit" id="submitBtn">Send Message</button>
-            </form>
-        </section>
+    <!-- Love Stories Section -->
+    <section id="stories" class="stories">
+        <h2>Long Love Stories</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+        <p>More love stories coming soon...</p>
+    </section>
 
-        <section id="songs" class="songs-section">
-            <h2 id="songsTitle">Songs Just for You</h2>
-            <p id="songsMessage">A collection of songs that remind me of us.</p>
-            <div class="song-list">
-                <ul>
-                    <li>Song Title 1 - Artist</li>
-                    <li>Song Title 2 - Artist</li>
-                    <li>Song Title 3 - Artist</li>
-                    </ul>
-            </div>
-        </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
 
-        <section id="photos" class="photos-section">
-            <h2 id="photosTitle">Our Special Moments</h2>
-            <div class="photo-gallery">
-                <img src="https://via.placeholder.com/300/FFC0CB/FFFFFF?Text=Photo+1" alt="Photo 1">
-                <img src="https://via.placeholder.com/300/ADD8E6/FFFFFF?Text=Photo+2" alt="Photo 2">
-                <img src="https://via.placeholder.com/300/90EE90/FFFFFF?Text=Photo+3" alt="Photo 3">
-                </div>
-        </section>
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
 
-        <section id="stories" class="stories-section">
-            <h2 id="storiesTitle">Our Long Love Stories</h2>
-            <p id="storiesMessage">Heartfelt stories that speak of enduring love.</p>
-            <div class="love-stories-content">
-                <p>Story 1: [Insert a beautiful long love story here from the internet or your own writing.]</p>
-                <p>Story 2: [Insert another inspiring love story here.]</p>
-                </div>
-        </section>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
-        <section id="feedback" class="feedback-section">
-            <h2 id="feedbackTitle">Send Your Thoughts</h2>
-            <p id="feedbackMessage">Share your feedback or anything on your mind.</p>
-            <form id="feedbackForm">
-                <textarea id="feedbackText" name="feedback" rows="4" placeholder="Your message to me"></textarea>
-                <button type="submit" id="submitFeedbackBtn">Send Feedback</button>
-            </form>
-        </section>
-    </main>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Romantic Love Story. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
