@@ -3,142 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get to Know Me</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Our Love Story</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400&family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        /* CSS will go here */
+    </style>
 </head>
 <body>
-    <!-- Background Slideshow -->
-    <div class="slideshow">
-        <img src="https://images.unsplash.com/photo-1474552226712-ac0f0961a954?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ImageR1" class="slide">
-        <img src="https://images.unsplash.com/photo-1513279922550-250c2129b13a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ImageR2" class="slide">
-        <img src="https://images.unsplash.com/photo-1525893107765-3eedb8fe8595?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ImageR3" class="slide">
-        <img src="https://img.freepik.com/free-photo/white-red-hearts_1048-4213.jpg" alt="ImageR4" class="slide">
-        <img src="https://images.unsplash.com/photo-1675194722355-f67f033e74d1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ImageR4" class="slide">
-        <img src="https://images.unsplash.com/photo-1471530090166-fbe1875839c4?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ImageR5" class="slide">
-    </div>
-    
-    </div>
-
-    <!-- Language Toggle -->
-    <div class="language-toggle">
-        <button id="englishBtn">English</button>
-        <button id="punjabiBtn">ਪੰਜਾਬੀ (Punjabi)</button>
-        <button id="hindiBtn">हिंदी (Hindi)</button>
-    </div>
-
-    <!-- Welcome Screen -->
-    <div class="welcome-screen" id="welcomeScreen">
-        <h1 id="greeting">Good Morning, Riya!</h1>
-        <p id="welcomeMessage">Welcome to a space where you can discover everything about me. I hope this brings us closer.</p>
-        <button id="continueBtn">Continue if you're interested in knowing me</button>
-    </div>
-
-    <!-- Declaration Screen -->
-    <div class="declaration-screen" id="declarationScreen" style="display: none;">
-        <h2 id="declarationTitle">Declaration</h2>
-        <p id="declarationText">All the information provided here is true and correct to the best of my knowledge.</p>
-        <label>
-            <input type="checkbox" id="declarationCheckbox"> <span id="acknowledgeText">I acknowledge this declaration.</span>
-        </label>
-        <button id="proceedBtn" disabled>Proceed</button>
-    </div>
-
-    <!-- Biography Sections -->
-    <div class="biography-screen" id="biographyScreen" style="display: none;">
-        <h2 id="biographyTitle">What would you like to know about me?</h2>
-        <form id="biographyForm">
-            <label><input type="checkbox" name="section" value="basicInfo"> <span>Basic Information</span></label><br>
-            <label><input type="checkbox" name="section" value="family"> <span>Family Background</span></label><br>
-            <label><input type="checkbox" name="section" value="interests"> <span>Interests and Hobbies</span></label><br>
-            <label><input type="checkbox" name="section" value="lifestyle"> <span>Lifestyle</span></label><br>
-            <label><input type="checkbox" name="section" value="philosophy"> <span>Life Philosophy</span></label><br>
-            <label><input type="checkbox" name="section" value="personality"> <span>Personality Traits</span></label><br>
-            <label><input type="checkbox" name="section" value="movies"> <span>Favorite Movies and Songs</span></label><br>
-        </form>
-        <button id="viewSelectedBtn">View Selected Sections</button>
-    </div>
-
-    <!-- Display Selected Sections -->
-    <div class="selected-sections" id="selectedSections" style="display: none;">
-        <h2 id="selectedTitle">Here's what you wanted to know:</h2>
-        
-        <!-- Basic Information -->
-        <div id="basicInfo" class="section" style="display: none;">
-            <h3>Basic Information</h3>
-            <p>Name: Rahul Pathania</p>
-            <p>Birthday: 10 November</p>
-            <p>Gmail: Rkpathania188@gmail.com</p>
-            <p>Hometown: Naddi, Dharamshala, Himachal Pradesh, India</p>
-            <p>Education: Post Graduation in Public Administration</p>
+    <!-- Romantic Header with Navigation -->
+    <header class="love-header">
+        <div class="container">
+            <h1 class="logo">Forever Us</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#gallery">Moments</a></li>
+                    <li><a href="#notes">Love Notes</a></li>
+                    <li><a href="#songs">Our Songs</a></li>
+                    <li><a href="#contact">Together</a></li>
+                </ul>
+            </nav>
         </div>
-        
-        <!-- Family Background -->
-        <div id="family" class="section" style="display: none;">
-            <h3>Family Background</h3>
-            <p>Parents: Anirudh and Seema Devi</p>
-            <p>Siblings: 1 younger sister - Riya</p>
-        </div>
-        
-        <!-- Interests and Hobbies -->
-        <div id="interests" class="section" style="display: none;">
-            <h3>Interests and Hobbies</h3>
-            <p>I love traveling, swimming, and missing you is also my hobby these days. I enjoy exploring new places, experiencing different cultures, and learning new things.</p>
-        </div>
-        
-        <!-- Lifestyle -->
-        <div id="lifestyle" class="section" style="display: none;">
-            <h3>Lifestyle</h3>
-            <p>I don't smoke or drink. I believe in a healthy and balanced lifestyle, focusing on fitness and mindfulness. I try to maintain a positive mindset and prioritize my well-being.</p>
-        </div>
-        
-        <!-- Life Philosophy -->
-        <div id="philosophy" class="section" style="display: none;">
-            <h3>Life Philosophy</h3>
-            <p>I believe in deep, meaningful connections that are emotional, not physical. While many people say love and everything else is a waste of time, I believe that life, in the end, seems pointless, and nothing really matters. We all will die one day, and if something gives meaning to life, we should cherish it. As the saying goes, it’s not what’s at the top of the mountain that gives meaning to the journey, but the journey itself—the climb—that’s what makes it worthwhile.</p>
-        </div>
-        
-        <!-- Personality Traits -->
-        <div id="personality" class="section" style="display: none;">
-            <h3>Personality Traits</h3>
-            <p>I am an introvert, but I can sometimes be extroverted with only a select group of people, especially close friends. I don't express too much and generally only share what's necessary or asked of me. I appreciate deeper conversations and spending time with those I feel close to.</p>
-        </div>
-        
-        <!-- Favorite Movies and Songs -->
-        <div id="movies" class="section" style="display: none;">
-            <h3>Favorite Movies and Songs</h3>
-            <p>Movies: Harry Potter, Fight Club, Pirates of the Caribbean</p>
-            <p>TV Series: Vikings, Money Heist, See</p>
-            <p>Songs: I enjoy slow, romantic, and sad songs, but I also listen to energetic tracks when needed.</p>
-        </div>
-        
-        <!-- Feedback Button -->
-        <button id="feedbackBtn">Give Feedback</button>
-    </div>
+    </header>
 
-    <!-- Feedback Screen -->
-    <div class="feedback-screen" id="feedbackScreen" style="display: none;">
-        <h2 id="feedbackTitle">Feedback</h2>
-        <p id="satisfactionText">How satisfied are you with the information provided?</p>
-        <select id="satisfaction">
-            <option value="5">Very Satisfied</option>
-            <option value="4">Satisfied</option>
-            <option value="3">Neutral</option>
-            <option value="2">Dissatisfied</option>
-            <option value="1">Very Dissatisfied</option>
-        </select>
-        <p id="additionalInfoText">What else would you like to know?</p>
-        <textarea id="additionalInfo" rows="4" cols="50"></textarea>
-        <button id="submitFeedbackBtn">Submit Feedback</button>
-    </div>
+    <!-- Hero Section with Romantic Background -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Every love story is beautiful,</h2>
+            <h1>But ours is my favorite</h1>
+            <div class="heart-beat">
+                <i class="fas fa-heart"></i>
+            </div>
+        </div>
+    </section>
 
-    <!-- Thank You Screen -->
-    <div class="thank-you-screen" id="thankYouScreen" style="display: none;">
-        <h2 id="thankYouTitle">Thank You, Riya!</h2>
-        <p id="thankYouMessage">Your feedback means a lot to me. I hope this brings us closer. 💖</p>
-        <p id="additionalNote">इससे ज्यादा जानने के लिए आपको मेरी माता जी से संपर्क करना होगा।</p>
-    </div>
+    <!-- Our Story Timeline (Inspired by Awwwards) -->
+    <section id="about" class="story-section">
+        <div class="container">
+            <h2 class="section-title">Our Beautiful Journey</h2>
+            <div class="timeline">
+                <!-- Timeline items will be added here -->
+            </div>
+        </div>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- Photo Gallery (Masonry Layout) -->
+    <section id="gallery" class="gallery-section">
+        <h2 class="section-title">Captured Moments</h2>
+        <div class="masonry-grid">
+            <!-- Gallery images will go here -->
+        </div>
+    </section>
+
+    <!-- Interactive Love Notes -->
+    <section id="notes" class="notes-section">
+        <div class="container">
+            <h2 class="section-title">Sweet Messages</h2>
+            <div class="notes-container">
+                <div class="note-form">
+                    <h3>Leave a Love Note</h3>
+                    <form id="loveNoteForm">
+                        <textarea placeholder="Pour your heart out..." required></textarea>
+                        <button type="submit">Send with Love <i class="fas fa-heart"></i></button>
+                    </form>
+                </div>
+                <div class="notes-display">
+                    <!-- Notes will appear here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Romantic Playlist -->
+    <section id="songs" class="music-section">
+        <div class="container">
+            <h2 class="section-title">Songs That Remind Me of You</h2>
+            <div class="playlist">
+                <!-- Music items will go here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Romantic Twist -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Let's Grow Closer</h2>
+            <form class="romantic-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Beautiful Name" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="What's on your heart..."></textarea>
+                </div>
+                <button type="submit">Send with Love <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Floating Heart Cursor -->
+    <div class="heart-cursor"></div>
+
+    <script>
+        // JavaScript will go here
+    </script>
 </body>
 </html>
