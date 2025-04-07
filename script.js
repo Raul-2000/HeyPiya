@@ -22,61 +22,73 @@ document.addEventListener('DOMContentLoaded', () => {
     // Language Toggle
     const translations = {
         en: {
-            greeting: "Good Morning, Riya!",
-            welcomeMessage: "Welcome to a space where you can discover everything about me. I hope this brings us closer.",
-            continueBtn: "Continue if you're interested in knowing me",
-            declarationTitle: "Declaration",
-            declarationText: "All the information provided here is true and correct to the best of my knowledge.",
-            acknowledgeText: "I acknowledge this declaration.",
-            proceedBtn: "Proceed",
-            biographyTitle: "What would you like to know about me?",
-            viewSelectedBtn: "View Selected Sections",
-            selectedTitle: "Here's what you wanted to know:",
-            feedbackTitle: "Feedback",
-            satisfactionText: "How satisfied are you with the information provided?",
-            additionalInfoText: "What else would you like to know?",
-            submitFeedbackBtn: "Submit Feedback",
-            thankYouTitle: "Thank You, Riya!",
-            thankYouMessage: "Your feedback means a lot to me. I hope this brings us closer. 💖",
-            additionalNote: "To know more, you'll have to contact my mother."
+            homeLink: "Home",
+            aboutLink: "About",
+            contactLink: "Contact",
+            songsLink: "Songs for You",
+            photosLink: "Photos",
+            storiesLink: "Long Love Stories",
+            greeting: "Welcome to Our Little Space",
+            welcomeMessage: "A place where our hearts connect and our story unfolds.",
+            aboutTitle: "About Us",
+            aboutText: "This is where we can share a little bit about ourselves and our journey together. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            contactTitle: "Contact Me",
+            contactMessage: "Feel free to reach out!",
+            submitBtn: "Send Message",
+            songsTitle: "Songs Just for You",
+            songsMessage: "A collection of songs that remind me of us.",
+            photosTitle: "Our Special Moments",
+            storiesTitle: "Our Long Love Stories",
+            storiesMessage: "Heartfelt stories that speak of enduring love.",
+            feedbackTitle: "Send Your Thoughts",
+            feedbackMessage: "Share your feedback or anything on your mind.",
+            submitFeedbackBtn: "Send Feedback"
         },
         pa: {
-            greeting: "ਸਤ ਸ੍ਰੀ ਅਕਾਲ, ਰੀਆ!",
-            welcomeMessage: "ਇੱਕ ਐਸੀ ਜਗ੍ਹਾ ਤੇ ਤੁਹਾਡਾ ਸਵਾਗਤ ਹੈ ਜਿੱਥੇ ਤੁਸੀਂ ਮੇਰੇ ਬਾਰੇ ਸਭ ਕੁਝ ਜਾਣ ਸਕਦੇ ਹੋ। ਮੈਨੂੰ ਉਮੀਦ ਹੈ ਕਿ ਇਹ ਸਾਨੂੰ ਕਰੀਬ ਲਿਆਵੇਗਾ।",
-            continueBtn: "ਜਾਰੀ ਰੱਖੋ ਜੇਕਰ ਤੁਸੀਂ ਮੈਨੂੰ ਜਾਣਨ ਵਿੱਚ ਦਿਲਚਸਪੀ ਰੱਖਦੇ ਹੋ",
-            declarationTitle: "ਐਲਾਨ",
-            declarationText: "ਇੱਥੇ ਦਿੱਤੀ ਗਈ ਸਾਰੀ ਜਾਣਕਾਰੀ ਮੇਰੇ ਗਿਆਨ ਅਨੁਸਾਰ ਸਹੀ ਅਤੇ ਸੱਚੀ ਹੈ।",
-            acknowledgeText: "ਮੈਂ ਇਸ ਐਲਾਨ ਨੂੰ ਮੰਨਦਾ/ਮੰਨਦੀ ਹਾਂ।",
-            proceedBtn: "ਜਾਰੀ ਰੱਖੋ",
-            biographyTitle: "ਤੁਸੀਂ ਮੇਰੇ ਬਾਰੇ ਕੀ ਜਾਣਨਾ ਚਾਹੁੰਦੇ ਹੋ?",
-            viewSelectedBtn: "ਚੁਣੇ ਗਏ ਭਾਗ ਦੇਖੋ",
-            selectedTitle: "ਇਹ ਉਹ ਹੈ ਜੋ ਤੁਸੀਂ ਜਾਣਨਾ ਚਾਹੁੰਦੇ ਸੀ:",
-            feedbackTitle: "ਫੀਡਬੈਕ",
-            satisfactionText: "ਤੁਸੀਂ ਦਿੱਤੀ ਗਈ ਜਾਣਕਾਰੀ ਤੋਂ ਕਿੰਨੇ ਸੰਤੁਸ਼ਟ ਹੋ?",
-            additionalInfoText: "ਤੁਸੀਂ ਹੋਰ ਕੀ ਜਾਣਨਾ ਚਾਹੁੰਦੇ ਹੋ?",
-            submitFeedbackBtn: "ਫੀਡਬੈਕ ਦਿਓ",
-            thankYouTitle: "ਧੰਨਵਾਦ, ਰੀਆ!",
-            thankYouMessage: "ਤੁਹਾਡਾ ਫੀਡਬੈਕ ਮੇਰੇ ਲਈ ਬਹੁਤ ਮਹੱਤਵਪੂਰਨ ਹੈ। ਮੈਨੂੰ ਉਮੀਦ ਹੈ ਕਿ ਇਹ ਸਾਨੂੰ ਕਰੀਬ ਲਿਆਵੇਗਾ। 💖",
-            additionalNote: "ਹੋਰ ਜਾਣਨ ਲਈ ਤੁਹਾਨੂੰ ਮੇਰੀ ਮਾਤਾ ਜੀ ਨਾਲ ਸੰਪਰਕ ਕਰਨਾ ਪਵੇਗਾ।"
+            homeLink: "ਘਰ",
+            aboutLink: "ਬਾਰੇ",
+            contactLink: "ਸੰਪਰਕ ਕਰੋ",
+            songsLink: "ਤੁਹਾਡੇ ਲਈ ਗੀਤ",
+            photosLink: "ਤਸਵੀਰਾਂ",
+            storiesLink: "ਲੰਬੀਆਂ ਪ੍ਰੇਮ ਕਹਾਣੀਆਂ",
+            greeting: "ਸਾਡੀ ਛੋਟੀ ਜਿਹੀ ਥਾਂ ਵਿੱਚ ਤੁਹਾਡਾ ਸੁਆਗਤ ਹੈ",
+            welcomeMessage: "ਇੱਕ ਅਜਿਹੀ ਜਗ੍ਹਾ ਜਿੱਥੇ ਸਾਡੇ ਦਿਲ ਜੁੜਦੇ ਹਨ ਅਤੇ ਸਾਡੀ ਕਹਾਣੀ ਸਾਹਮਣੇ ਆਉਂਦੀ ਹੈ।",
+            aboutTitle: "ਸਾਡੇ ਬਾਰੇ",
+            aboutText: "ਇਹ ਉਹ ਥਾਂ ਹੈ ਜਿੱਥੇ ਅਸੀਂ ਆਪਣੇ ਬਾਰੇ ਅਤੇ ਸਾਡੇ ਇਕੱਠੇ ਸਫ਼ਰ ਬਾਰੇ ਥੋੜ੍ਹਾ ਸਾਂਝਾ ਕਰ ਸਕਦੇ ਹਾਂ। ਲੋਰੇਮ ਇਪਸਮ ਡਾਲਰ ਸਿਟ ਅਮੇਟ, ਸੰਸਕ੍ਰਿਪਟ ਐਡੀਪਿਸਿੰਗ ਐਲੀਟ। ਸੇਡ ਡੂ ਈਯੂਸਮੌਡ ਟੈਂਪਰ ਇੰਸੀਡਿਡੰਟ ਯੂਟੀ ਲੈਬੋਰ ਐਟ ਡੋਲੋਰ ਮੈਗਨਾ ਐਲੀਕੁਆ। ਯੂਟੀ ਐਨਿਮ ਐਡ ਮਿਨੀਮ ਵੈਨਿਅਮ, ਕੁਇਸ ਨੋਸਟਰਡ ਐਕਸਰਸਾਈਟੇਸ਼ਨ ਉਲੈਮਕੋ ਲੈਬੋਰਿਸ ਨੀਸੀ ਯੂਟੀ ਐਲੀਕੁਇਪ ਐਕਸ ਈਏ ਕਾਮੋਡੋ ਕੌਨਸੈਕਟ।",
+            contactTitle: "ਮੇਰੇ ਨਾਲ ਸੰਪਰਕ ਕਰੋ",
+            contactMessage: "ਬੇਝਿਜਕ ਸੰਪਰਕ ਕਰੋ!",
+            submitBtn: "ਸੁਨੇਹਾ ਭੇਜੋ",
+            songsTitle: "ਸਿਰਫ਼ ਤੁਹਾਡੇ ਲਈ ਗੀਤ",
+            songsMessage: "ਉਨ੍ਹਾਂ ਗੀਤਾਂ ਦਾ ਸੰਗ੍ਰਹਿ ਜੋ ਮੈਨੂੰ ਸਾਡੀ ਯਾਦ ਦਿਵਾਉਂਦੇ ਹਨ।",
+            photosTitle: "ਸਾਡੇ ਖਾਸ ਪਲ",
+            storiesTitle: "ਸਾਡੀਆਂ ਲੰਬੀਆਂ ਪ੍ਰੇਮ ਕਹਾਣੀਆਂ",
+            storiesMessage: "ਦਿਲੋਂ ਭਰੀਆਂ ਕਹਾਣੀਆਂ ਜੋ ਸਦੀਵੀ ਪਿਆਰ ਦੀ ਗੱਲ ਕਰਦੀਆਂ ਹਨ।",
+            feedbackTitle: "ਆਪਣੇ ਵਿਚਾਰ ਭੇਜੋ",
+            feedbackMessage: "ਆਪਣੀ ਫੀਡਬੈਕ ਜਾਂ ਤੁਹਾਡੇ ਮਨ ਵਿੱਚ ਕੁਝ ਵੀ ਸਾਂਝਾ ਕਰੋ।",
+            submitFeedbackBtn: "ਫੀਡਬੈਕ ਭੇਜੋ"
         },
         hi: {
-            greeting: "सुप्रभात, रिया!",
-            welcomeMessage: "एक ऐसी जगह पर आपका स्वागत है जहां आप मेरे बारे में सब कुछ जान सकते हैं। मुझे उम्मीद है कि यह हमें करीब लाएगा।",
-            continueBtn: "जारी रखें यदि आप मुझे जानने में रुचि रखते हैं",
-            declarationTitle: "घोषणा",
-            declarationText: "यहां दी गई सभी जानकारी मेरी जानकारी के अनुसार सही और सत्य है।",
-            acknowledgeText: "मैं इस घोषणा को स्वीकार करता/करती हूं।",
-            proceedBtn: "जारी रखें",
-            biographyTitle: "आप मेरे बारे में क्या जानना चाहते हैं?",
-            viewSelectedBtn: "चयनित अनुभाग देखें",
-            selectedTitle: "यह वही है जो आप जानना चाहते थे:",
-            feedbackTitle: "प्रतिक्रिया",
-            satisfactionText: "आप दी गई जानकारी से कितने संतुष्ट हैं?",
-            additionalInfoText: "आप और क्या जानना चाहते हैं?",
-            submitFeedbackBtn: "प्रतिक्रिया दें",
-            thankYouTitle: "धन्यवाद, रिया!",
-            thankYouMessage: "आपकी प्रतिक्रिया मेरे लिए बहुत महत्वपूर्ण है। मुझे उम्मीद है कि यह हमें करीब लाएगा। 💖",
-            additionalNote: "इससे ज्यादा जानने के लिए आपको मेरी माता जी से संपर्क करना होगा।"
+            homeLink: "होम",
+            aboutLink: "हमारे बारे में",
+            contactLink: "संपर्क करें",
+            songsLink: "आपके लिए गाने",
+            photosLink: "तस्वीरें",
+            storiesLink: "लंबी प्रेम कहानियाँ",
+            greeting: "हमारी छोटी सी जगह में आपका स्वागत है",
+            welcomeMessage: "एक ऐसी जगह जहाँ हमारे दिल जुड़ते हैं और हमारी कहानी सामने आती है।",
+            aboutTitle: "हमारे बारे में",
+            aboutText: "यह वह जगह है जहाँ हम अपने बारे में और हमारी एक साथ यात्रा के बारे में थोड़ा साझा कर सकते हैं। लोरेम इप्सम डोलर सिट अमेत, कॉन्सेक्टेटुर एडिपिसिंग एलिट। सेड डू इयूसमॉड टेम्पोर इनसिडिडंट यूटी लेबोर एट डोलोर मैग्ना एलिक्वा। यूटी एनम एड मिनिम वेनियम, क्विस नॉस्ट्रड एक्सरसाइजेशन उल्लामको लेबोरिस निसी यूटी एलिक्प एक्स ईए कोमोडो कॉन्सक्वेट।",
+            contactTitle: "मुझसे संपर्क करें",
+            contactMessage: "बेझिझक संपर्क करें!",
+            submitBtn: "संदेश भेजें",
+            songsTitle: "सिर्फ तुम्हारे लिए गाने",
+            songsMessage: "उन गानों का संग्रह जो मुझे हमारी याद दिलाते हैं।",
+            photosTitle: "हमारे खास पल",
+            storiesTitle: "हमारी लंबी प्रेम कहानियाँ",
+            storiesMessage: "दिल से भरी कहानियाँ जो शाश्वत प्रेम की बात करती हैं।",
+            feedbackTitle: "अपने विचार भेजें",
+            feedbackMessage: "अपनी प्रतिक्रिया या आपके मन में कुछ भी साझा करें।",
+            submitFeedbackBtn: "प्रतिक्रिया भेजें"
         }
     };
 
@@ -103,64 +115,38 @@ document.addEventListener('DOMContentLoaded', () => {
         updateTexts('hi');
     });
 
-    // Welcome Screen -> Declaration Screen
-    document.getElementById('continueBtn').addEventListener('click', () => {
-        console.log('Continue button clicked!'); // Debugging line
-        document.getElementById('welcomeScreen').style.display = 'none';
-        document.getElementById('declarationScreen').style.display = 'block';
-    });
+    // Basic smooth scrolling for navigation links
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
 
-    // Enable Proceed Button when checkbox is checked
-    document.getElementById('declarationCheckbox').addEventListener('change', (e) => {
-        console.log('Checkbox clicked!'); // Debugging line
-        document.getElementById('proceedBtn').disabled = !e.target.checked;
-    });
-
-    // Declaration Screen -> Biography Screen
-    document.getElementById('proceedBtn').addEventListener('click', () => {
-        console.log('Proceed button clicked!'); // Debugging line
-        document.getElementById('declarationScreen').style.display = 'none';
-        document.getElementById('biographyScreen').style.display = 'block';
-    });
-
-    // Show Selected Sections
-    document.getElementById('viewSelectedBtn').addEventListener('click', () => {
-        console.log('View Selected Sections button clicked!'); // Debugging line
-        // Hide all sections first
-        document.querySelectorAll('.section').forEach(section => {
-            section.style.display = 'none';
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
         });
+    });
 
-        // Show only the selected sections
-        const selectedSections = document.querySelectorAll('input[name="section"]:checked');
-        if (selectedSections.length === 0) {
-            alert('Please select at least one section to view.');
-            return;
-        }
-
-        selectedSections.forEach(section => {
-            document.getElementById(section.value).style.display = 'block';
+    // Simple feedback submission alert
+    const feedbackForm = document.getElementById('feedbackForm');
+    if (feedbackForm) {
+        feedbackForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const feedbackText = document.getElementById('feedbackText').value;
+            alert(`Thank you for your feedback: ${feedbackText}`);
+            feedbackForm.reset(); // Clear the form after submission
         });
+    }
 
-        // Show the selected sections container
-        document.getElementById('biographyScreen').style.display = 'none';
-        document.getElementById('selectedSections').style.display = 'block';
-    });
-
-    // Feedback Screen
-    document.getElementById('feedbackBtn').addEventListener('click', () => {
-        console.log('Feedback button clicked!'); // Debugging line
-        document.getElementById('selectedSections').style.display = 'none';
-        document.getElementById('feedbackScreen').style.display = 'block';
-    });
-
-    // Submit Feedback
-    document.getElementById('submitFeedbackBtn').addEventListener('click', () => {
-        console.log('Submit Feedback button clicked!'); // Debugging line
-        const satisfaction = document.getElementById('satisfaction').value;
-        const additionalInfo = document.getElementById('additionalInfo').value;
-        alert(`Thank you for your feedback!\nSatisfaction: ${satisfaction}\nAdditional Info: ${additionalInfo}`);
-        document.getElementById('feedbackScreen').style.display = 'none';
-        document.getElementById('thankYouScreen').style.display = 'block';
-    });
+    // Simple contact form submission alert
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            alert(`Thank you for your message, ${name}! We will get back to you soon.`);
+            contactForm.reset(); // Clear the form after submission
+        });
+    }
 });
