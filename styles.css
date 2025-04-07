@@ -1,188 +1,106 @@
-/* General Styles */
-body {
-    font-family: 'Poppins', sans-serif;
-    color: #fff; /* White text for better contrast */
-    text-align: center;
-    padding: 20px;
-    margin: 0;
-    overflow: auto; /* Ensure scrolling works */
-    background: linear-gradient(to bottom, #000000, #1a1a1a); /* Black gradient background */
-    position: relative;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Little Space for Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="slideshow">
+        <img src="https://images.unsplash.com/photo-1474552226712-ac0f0961a954?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ImageR1" class="slide">
+        <img src="https://images.unsplash.com/photo-1513279922550-250c2129b13a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ImageR2" class="slide">
+        <img src="https://images.unsplash.com/photo-1525893107765-3eedb8fe8595?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ImageR3" class="slide">
+        <img src="https://img.freepik.com/free-photo/white-red-hearts_1048-4213.jpg" alt="ImageR4" class="slide">
+        <img src="https://images.unsplash.com/photo-1675194722355-f67f033e74d1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ImageR4" class="slide">
+        <img src="https://images.unsplash.com/photo-1471530090166-fbe1875839c4?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ImageR5" class="slide">
+    </div>
 
-/* Add decorative leaves and flowers */
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://www.transparenttextures.com/patterns/leaves-pattern.png'); /* Leaves pattern */
-    opacity: 0.2; /* Semi-transparent */
-    z-index: -1;
-}
+    <div class="language-toggle">
+        <button id="englishBtn">English</button>
+        <button id="punjabiBtn">ਪੰਜਾਬੀ (Punjabi)</button>
+        <button id="hindiBtn">हिंदी (Hindi)</button>
+    </div>
 
-/* Romantic couple image */
-body::after {
-    content: '';
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 40%; /* Adjust height as needed */
-    background-image: url('https://source.unsplash.com/1600x900/?couple,romantic'); /* Romantic couple image */
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-    opacity: 0.8; /* Semi-transparent */
-}
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#home" id="homeLink">Home</a></li>
+            <li><a href="#about" id="aboutLink">About</a></li>
+            <li><a href="#contact" id="contactLink">Contact</a></li>
+            <li><a href="#songs" id="songsLink">Songs for You</a></li>
+            <li><a href="#photos" id="photosLink">Photos</a></li>
+            <li><a href="#stories" id="storiesLink">Long Love Stories</a></li>
+        </ul>
+    </nav>
 
-h1, h2, h3 {
-    font-family: 'Great Vibes', cursive;
-    color: #ff6f61; /* Romantic pink color */
-}
+    <main class="content">
+        <section id="home" class="home-section">
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1548681528-6a5799530524?fm=jpg&q=80&w=2000&fit=max&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Romantic Couple">
+            </div>
+            <div class="hero-text">
+                <h1 id="greeting">Welcome to Our Little Space</h1>
+                <p id="welcomeMessage">A place where our hearts connect and our story unfolds.</p>
+            </div>
+        </section>
 
-button {
-    background-color: #ff6f61;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
+        <section id="about" class="about-section">
+            <h2 id="aboutTitle">About Us</h2>
+            <p id="aboutText">This is where we can share a little bit about ourselves and our journey together. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </section>
 
-button:hover {
-    background-color: #ff4757;
-}
+        <section id="contact" class="contact-section">
+            <h2 id="contactTitle">Contact Me</h2>
+            <p id="contactMessage">Feel free to reach out!</p>
+            <form id="contactForm">
+                <input type="text" id="name" name="name" placeholder="Your Name">
+                <input type="email" id="email" name="email" placeholder="Your Email">
+                <textarea id="message" name="message" rows="4" placeholder="Your Message"></textarea>
+                <button type="submit" id="submitBtn">Send Message</button>
+            </form>
+        </section>
 
-/* Background Slideshow */
-.slideshow {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -2; /* Behind everything */
-}
+        <section id="songs" class="songs-section">
+            <h2 id="songsTitle">Songs Just for You</h2>
+            <p id="songsMessage">A collection of songs that remind me of us.</p>
+            <div class="song-list">
+                <ul>
+                    <li>Song Title 1 - Artist</li>
+                    <li>Song Title 2 - Artist</li>
+                    <li>Song Title 3 - Artist</li>
+                    </ul>
+            </div>
+        </section>
 
-.slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
+        <section id="photos" class="photos-section">
+            <h2 id="photosTitle">Our Special Moments</h2>
+            <div class="photo-gallery">
+                <img src="https://via.placeholder.com/300/FFC0CB/FFFFFF?Text=Photo+1" alt="Photo 1">
+                <img src="https://via.placeholder.com/300/ADD8E6/FFFFFF?Text=Photo+2" alt="Photo 2">
+                <img src="https://via.placeholder.com/300/90EE90/FFFFFF?Text=Photo+3" alt="Photo 3">
+                </div>
+        </section>
 
-.slide.active {
-    opacity: 1;
-}
+        <section id="stories" class="stories-section">
+            <h2 id="storiesTitle">Our Long Love Stories</h2>
+            <p id="storiesMessage">Heartfelt stories that speak of enduring love.</p>
+            <div class="love-stories-content">
+                <p>Story 1: [Insert a beautiful long love story here from the internet or your own writing.]</p>
+                <p>Story 2: [Insert another inspiring love story here.]</p>
+                </div>
+        </section>
 
-/* Language Toggle */
-.language-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 10;
-}
+        <section id="feedback" class="feedback-section">
+            <h2 id="feedbackTitle">Send Your Thoughts</h2>
+            <p id="feedbackMessage">Share your feedback or anything on your mind.</p>
+            <form id="feedbackForm">
+                <textarea id="feedbackText" name="feedback" rows="4" placeholder="Your message to me"></textarea>
+                <button type="submit" id="submitFeedbackBtn">Send Feedback</button>
+            </form>
+        </section>
+    </main>
 
-.language-toggle button {
-    margin: 5px;
-    background-color: #ffcccb;
-    color: #333;
-}
-
-.language-toggle button:hover {
-    background-color: #ff6f61;
-    color: white;
-}
-
-/* Welcome Screen */
-.welcome-screen {
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1); /* White shadow for contrast */
-    max-width: 600px;
-    margin: 100px auto;
-    position: relative;
-    z-index: 1; /* Above the background */
-}
-
-.welcome-screen h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.welcome-screen p {
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-/* Thank You Screen */
-.thank-you-screen {
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1); /* White shadow for contrast */
-    max-width: 600px;
-    margin: 100px auto;
-    position: relative;
-    z-index: 1; /* Above the background */
-}
-
-.thank-you-screen h2 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.thank-you-screen p {
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-/* Additional Note Style */
-#additionalNote {
-    font-size: 18px;
-    color: #ff6f61; /* Romantic pink color */
-    margin-top: 20px;
-    font-style: italic;
-}
-
-/* Biography and Selected Sections */
-.biography-screen, .selected-sections, .feedback-screen {
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1); /* White shadow for contrast */
-    max-width: 600px;
-    margin: 50px auto;
-    position: relative;
-    z-index: 1; /* Above the background */
-}
-
-/* Section Styles */
-.section {
-    margin-top: 20px;
-    text-align: left;
-}
-
-/* Feedback Screen */
-textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    margin-top: 10px;
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
-    color: #fff; /* White text */
-}
-
-textarea::placeholder {
-    color: #ccc; /* Light gray placeholder text */
-}
+    <script src="script.js"></script>
+</body>
+</html>
