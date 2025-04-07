@@ -3,110 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Love Story</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400&family=Great+Vibes&display=swap" rel="stylesheet">
-    <style>
-        /* CSS will go here */
-    </style>
+    <title>A Little Space for Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Romantic Header with Navigation -->
-    <header class="love-header">
-        <div class="container">
-            <h1 class="logo">Forever Us</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">Our Story</a></li>
-                    <li><a href="#gallery">Moments</a></li>
-                    <li><a href="#notes">Love Notes</a></li>
-                    <li><a href="#songs">Our Songs</a></li>
-                    <li><a href="#contact">Together</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div class="slideshow">
+        <img src="https://images.unsplash.com/photo-1474552226712-ac0f0961a954?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ImageR1" class="slide">
+        <img src="https://images.unsplash.com/photo-1513279922550-250c2129b13a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ImageR2" class="slide">
+        <img src="https://images.unsplash.com/photo-1525893107765-3eedb8fe8595?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ImageR3" class="slide">
+        <img src="https://img.freepik.com/free-photo/white-red-hearts_1048-4213.jpg" alt="ImageR4" class="slide">
+        <img src="https://images.unsplash.com/photo-1675194722355-f67f033e74d1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ImageR4" class="slide">
+        <img src="https://images.unsplash.com/photo-1471530090166-fbe1875839c4?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ImageR5" class="slide">
+    </div>
 
-    <!-- Hero Section with Romantic Background -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>Every love story is beautiful,</h2>
-            <h1>But ours is my favorite</h1>
-            <div class="heart-beat">
-                <i class="fas fa-heart"></i>
+    <div class="language-toggle">
+        <button id="englishBtn">English</button>
+        <button id="punjabiBtn">ਪੰਜਾਬੀ (Punjabi)</button>
+        <button id="hindiBtn">हिंदी (Hindi)</button>
+    </div>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#home" id="homeLink">Home</a></li>
+            <li><a href="#about" id="aboutLink">About</a></li>
+            <li><a href="#contact" id="contactLink">Contact</a></li>
+            <li><a href="#songs" id="songsLink">Songs for You</a></li>
+            <li><a href="#photos" id="photosLink">Photos</a></li>
+            <li><a href="#stories" id="storiesLink">Long Love Stories</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <section id="home" class="home-section">
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1548681528-6a5799530524?fm=jpg&q=80&w=2000&fit=max&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Romantic Couple">
             </div>
-        </div>
-    </section>
-
-    <!-- Our Story Timeline (Inspired by Awwwards) -->
-    <section id="about" class="story-section">
-        <div class="container">
-            <h2 class="section-title">Our Beautiful Journey</h2>
-            <div class="timeline">
-                <!-- Timeline items will be added here -->
+            <div class="hero-text">
+                <h1 id="greeting">Welcome to Our Little Space</h1>
+                <p id="welcomeMessage">A place where our hearts connect and our story unfolds.</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Photo Gallery (Masonry Layout) -->
-    <section id="gallery" class="gallery-section">
-        <h2 class="section-title">Captured Moments</h2>
-        <div class="masonry-grid">
-            <!-- Gallery images will go here -->
-        </div>
-    </section>
+        <section id="about" class="about-section">
+            <h2 id="aboutTitle">About Us</h2>
+            <p id="aboutText">This is where we can share a little bit about ourselves and our journey together. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </section>
 
-    <!-- Interactive Love Notes -->
-    <section id="notes" class="notes-section">
-        <div class="container">
-            <h2 class="section-title">Sweet Messages</h2>
-            <div class="notes-container">
-                <div class="note-form">
-                    <h3>Leave a Love Note</h3>
-                    <form id="loveNoteForm">
-                        <textarea placeholder="Pour your heart out..." required></textarea>
-                        <button type="submit">Send with Love <i class="fas fa-heart"></i></button>
-                    </form>
-                </div>
-                <div class="notes-display">
-                    <!-- Notes will appear here -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Romantic Playlist -->
-    <section id="songs" class="music-section">
-        <div class="container">
-            <h2 class="section-title">Songs That Remind Me of You</h2>
-            <div class="playlist">
-                <!-- Music items will go here -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section with Romantic Twist -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2 class="section-title">Let's Grow Closer</h2>
-            <form class="romantic-form">
-                <div class="form-group">
-                    <input type="text" placeholder="Your Beautiful Name" required>
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="What's on your heart..."></textarea>
-                </div>
-                <button type="submit">Send with Love <i class="fas fa-paper-plane"></i></button>
+        <section id="contact" class="contact-section">
+            <h2 id="contactTitle">Contact Me</h2>
+            <p id="contactMessage">Feel free to reach out!</p>
+            <form id="contactForm">
+                <input type="text" id="name" name="name" placeholder="Your Name">
+                <input type="email" id="email" name="email" placeholder="Your Email">
+                <textarea id="message" name="message" rows="4" placeholder="Your Message"></textarea>
+                <button type="submit" id="submitBtn">Send Message</button>
             </form>
-        </div>
-    </section>
+        </section>
 
-    <!-- Floating Heart Cursor -->
-    <div class="heart-cursor"></div>
+        <section id="songs" class="songs-section">
+            <h2 id="songsTitle">Songs Just for You</h2>
+            <p id="songsMessage">A collection of songs that remind me of us.</p>
+            <div class="song-list">
+                <ul>
+                    <li>Song Title 1 - Artist</li>
+                    <li>Song Title 2 - Artist</li>
+                    <li>Song Title 3 - Artist</li>
+                    </ul>
+            </div>
+        </section>
 
-    <script>
-        // JavaScript will go here
-    </script>
+        <section id="photos" class="photos-section">
+            <h2 id="photosTitle">Our Special Moments</h2>
+            <div class="photo-gallery">
+                <img src="https://via.placeholder.com/300/FFC0CB/FFFFFF?Text=Photo+1" alt="Photo 1">
+                <img src="https://via.placeholder.com/300/ADD8E6/FFFFFF?Text=Photo+2" alt="Photo 2">
+                <img src="https://via.placeholder.com/300/90EE90/FFFFFF?Text=Photo+3" alt="Photo 3">
+                </div>
+        </section>
+
+        <section id="stories" class="stories-section">
+            <h2 id="storiesTitle">Our Long Love Stories</h2>
+            <p id="storiesMessage">Heartfelt stories that speak of enduring love.</p>
+            <div class="love-stories-content">
+                <p>Story 1: [Insert a beautiful long love story here from the internet or your own writing.]</p>
+                <p>Story 2: [Insert another inspiring love story here.]</p>
+                </div>
+        </section>
+
+        <section id="feedback" class="feedback-section">
+            <h2 id="feedbackTitle">Send Your Thoughts</h2>
+            <p id="feedbackMessage">Share your feedback or anything on your mind.</p>
+            <form id="feedbackForm">
+                <textarea id="feedbackText" name="feedback" rows="4" placeholder="Your message to me"></textarea>
+                <button type="submit" id="submitFeedbackBtn">Send Feedback</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
