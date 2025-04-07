@@ -13,7 +13,149 @@
         <img src="https://images.unsplash.com/photo-1513279922550-250c2129b13a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ImageR2" class="slide">
         <img src="https://images.unsplash.com/photo-1525893107765-3eedb8fe8595?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ImageR3" class="slide">
         <img src="https://img.freepik.com/free-photo/white-red-hearts_1048-4213.jpg" alt="ImageR4" class="slide">
-        <img src="https://images.unsplash.com/photo-1675194722355-f67f033e74d1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ImageR4" class="slide">
+        <img src="https://images.unsplash.com/ph* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fdf1f1;
+    color: #333;
+}
+
+header {
+    background-color: #ff7a8b;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.hero {
+    background-image: url('romantic-background.jpg');
+    background-size: cover;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.songs .song-item {
+    margin-bottom: 20px;
+}
+
+.songs .song-item h3 {
+    font-size: 22px;
+}
+
+.photo-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.photo-gallery img {
+    width: 30%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.stories p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.contact {
+    background-color: #fff1f1;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.contact input,
+.contact textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #ff7a8b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #ff4e5b;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff7a8b;
+    color: white;
+}
+
+footer p {
+    font-size: 16px;
+}
+to-1675194722355-f67f033e74d1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ImageR4" class="slide">
         <img src="https://images.unsplash.com/photo-1471530090166-fbe1875839c4?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ImageR5" class="slide">
     </div>
 
